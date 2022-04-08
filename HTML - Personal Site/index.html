@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Site</title>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        hr {
+            border-style: none;
+            border-top: dotted;
+            border-color: gray;
+            border-width: 5px;
+            width: 5%;
+        }
+
+        img{
+            height: 200px;
+            clip-path: circle(50%);
+        }
+    </style>
 </head>
+
+<style>
+
+</style>
+<!-- Inline CSS -->
 <body>
     <table cellspacing ="20">
         <tr>
             <td>
                 <!-- adding images -->
-                <img src="https://pbs.twimg.com/profile_images/1505935948454195201/st3oPyL-_400x400.jpg" alt="pragnesh's profile picture">
+                <img src="https://pbs.twimg.com/profile_images/1505935948454195201/st3oPyL-_400x400.jpg" 
+                alt="pragnesh's profile picture" sizes="">
             </td>
             <td>
                 <h1>Pragnesh Barik</h1>
@@ -30,6 +55,7 @@
             </td>
         </tr>
     </table>
+    <hr>
     <!-- html tables -->
     <h3>Timeline</h3>
     <table cellspacing="20">
@@ -47,6 +73,7 @@
         </tr>
     </table>
     <br>
+    <hr>
     <h3>Skills</h3>
     <table cellspacing="20">
         <tr>
@@ -67,6 +94,5 @@
     <a href="https://twitter.com/barik_pragnesh">My Twitter</a>
     <a href="phone:9601113600">9601113600</a>
     <a href="contact_form.html">Contact Me</a>
-    
 </body>
 </html>
