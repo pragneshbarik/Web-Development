@@ -19,13 +19,14 @@ h1 {
     height: 200px;
     width: 200px;
     margin-left: 260px;
-    border: solid 10px;
+    border: solid 20px;
     
 }
 
 .bottom {
     background-color: gold;
-    margin-left: 480px;
+    margin-left: 500px;
     height: 200px;
+    border: solid 10px;
     width: 200px;
 }
