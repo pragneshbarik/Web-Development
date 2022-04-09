@@ -35,44 +35,30 @@ h1 {
     width: 200px;
 }
 
-.middle {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-    margin-left: 260px;
-    border: solid 20px;
-    
-}
-
-.bottom {
-    background-color: gold;
-    margin-left: 500px;
-    height: 200px;
-    border: solid 10px;
-    width: 200px;
-}
 
 .first {
     background-color: blue;
     height: 100px;
     width: 100px;
-    position: relative;
+    position: absolute;
+    bottom: 200px;
 }
 
 .second {
     background-color: yellow;
     height: 100px;
     width: 100px;
-    position: relative;
+    position: absolute;
     bottom: 100px;
     left: 100px;
+
 }
 
 .third {
     background-color: red;
     height: 100px;
     width: 100px;
-    position: relative;
-    bottom: 200px;
+    position: absolute;
+    bottom: 0px;
     left: 200px;
 }
