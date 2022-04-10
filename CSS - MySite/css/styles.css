@@ -18,6 +18,8 @@
     * Absolute
     * Fixed
 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;500&family=Sacramento&display=swap');
+
 body {
     margin: 0;
     text-align: center;
@@ -157,3 +159,52 @@ hr {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+
+li, .navlinks, .cta-b, .cta {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height: 20px;
+    background-color: #C4C4C4;
+}
+
+.navitems {
+    list-style: none;
+}
+
+.navitems li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navitems li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navitems li a :hover {
+    color: #0088a9;
+}
+
+.cta-b {
+    padding: 9px 25px;
+    background-color: rgba(218, 184, 139, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta-b:hover {
+    background-color: rgba(218, 184, 139, 0.6);
+    
+    
+}
