@@ -11,7 +11,7 @@ body {
 
 
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 5%;
 }
 
 .landing-text {
@@ -38,10 +38,14 @@ body {
 }
 
 .iphone-img {
+    margin: auto auto -16rem 50px;
     width: 60%;
     transform: rotate(25deg);
+}
+#features{
+    padding: 7% 15%;
+    background-color: #fff;
     position: relative;
-    left: 100px;
 }
 
 .features-heading {
@@ -116,4 +120,31 @@ h2 {
 
 .pricing-item {
     padding: 5% 2%;
+}
+
+@media (max-width :1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .iphone-img {
+        position: static;
+        transform: rotate(0deg);
+        margin: 50px 0 5px;
+    }
+}
+
+#cta {
+    color: white;
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.cta-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 5%;
 }
