@@ -10,11 +10,11 @@ app.get("/", (req, res) => {
 })
 
 app.post("/", (req, res) => {
-    num1 = Number(req.body.num1);
-    num2 = Number(req.body.num2);
+    num1 = Number(req.body.w);
+    num2 = Number(req.body.h);
 
-    result = num1 + num2 ;
-    res.send("result " + result);
+    result = num1/(num2*num2) ;
+    res.send("Your BMI is " + result);
  
 });
 
