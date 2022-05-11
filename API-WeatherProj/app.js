@@ -29,7 +29,7 @@ app.post("/", (req, res)=>{
             console.log(t);
             console.log(desc);
             res.write("<head><meta charset='utf-8'></head>");
-            res.write("<h1>The temperature in London is " + t + " C and weather is currently " + desc + ".</h1>");
+            res.write("<h1>The temperature in " + query + " is " + t + " C and weather is currently " + desc + ".</h1>");
             res.write("<br><img src=" + icon_url + ">");
             res.send();
 
