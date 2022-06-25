@@ -10,7 +10,7 @@ const note_contents = "Lorem Ipsum is simply dummy text of the printing and type
 let notes = []
 
 note_titles.forEach((title, index)=>{
-    notes.push(<Note index = {index+1} title={title} content={note_contents}/>)
+    notes.push(<Note key={index} index = {index+1} title={title} content={note_contents}/>)
 })
 
 let todo = 

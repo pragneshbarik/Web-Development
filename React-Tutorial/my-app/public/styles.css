@@ -28,7 +28,7 @@ footer {
 
 .notes {
     display: grid;
-    margin: 1rem;
+    margin: 2rem;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
@@ -42,10 +42,15 @@ footer {
 }
 
 .note h1{
+    background-color: #1B2430;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight:700;
     font-size: 1.5rem;
-    margin: 1rem;
+    padding: 1rem;
+    margin: -1px;
+    border-radius: 5px 5px 0 0;
+
 }
 
 .note p{
