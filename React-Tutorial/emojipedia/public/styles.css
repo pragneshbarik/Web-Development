@@ -4,9 +4,12 @@
     margin: 0;
     padding: 0;
 }
+
 header {
-    background-color: #1B2430;
+    display: flex;
+    background-color: #6A2C70;
     padding: 1rem 2rem;
+    height: 5rem;
 }
 
 footer {
@@ -14,55 +17,54 @@ footer {
     margin: 0 auto;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    color: gray;
+    color: white;
     padding: 1rem;
+    background-color: #00ADB5;
 }
 
 .main-logo {
-    text-align: center;
     color : white;
+    padding: 1rem;
     font-family: 'Poppins', sans-serif;
     font-size: xx-large;
+    font-weight: 700;
 }
 
-
-.notes {
+.cards {
     display: grid;
-    margin: 2rem;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    margin: 5rem 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     grid-auto-rows: minmax(100px, auto);
 }
 
-.note {
-    border: solid gray 1px;
+.card {
     border-radius: 5px;
+    border: solid 1px #ccc;
     box-shadow: 0 2px 5px #ccc;
     display: inline-grid;
 }
 
-.note h1{
-    background-color: #1B2430;
+.card h1{
+    text-align: center;
     color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:700;
-    font-size: 1.5rem;
+    font-size: 4rem;
     padding: 1rem;
-    margin: -1px;
-    border-radius: 5px 5px 0 0;
 
 }
 
-.note p{
-    font-family: 'Open Sans', sans-serif;
-    font-weight:400;
-    font-size: 1rem;
+.card .emoji-name{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    font-size: 1.3rem;
     margin: 1rem;
+    text-align: center;
 }
 
-.note ul{
-    font-family: 'Open Sans', sans-serif;
+.card p{
+    text-align: center;
+    font-family: 'Roboto' , sans-serif;
     font-weight:400;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 1rem;
 }
