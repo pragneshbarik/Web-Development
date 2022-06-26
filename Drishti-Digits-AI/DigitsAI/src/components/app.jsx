@@ -7,36 +7,63 @@ function makeGrid(xlen, ylen) {
     for(let i=0; i<xlen; i++){
     let row= []
         for(let j=0; j<ylen; j++){
-            row.push(<Pixel x={j} y={i} />)
+            row.push(<Pixel x={j} y={i}/>)
         }
         grid.push(<div className="row">{row}</div>)
     }
     return grid
 }
-let row = makeGrid(14, 14)
 
-
-function Buttons () {
-    return (<div className="button-group">
-            <button class="submit-button" type="submit" >Detect</button> 
-            <button class="clear-button">Clear</button>
-            </div>)
+function makeMatrix(xlen, ylen) {
+    let matrix = []
+    for(let i=0; i<xlen; i++) {
+        let vector = []
+        for(let j=0; j<ylen; j++){
+            vector.push(0)
+        }
+        matrix.push(vector)
+    }
+    return matrix
 }
 
-
 function App() {
+    
+    let row = makeGrid(14, 14)
+    let mat = makeMatrix(14, 14)
+
+    function Buttons () {
+        function clearBoard() {
+            window.location.reload(false)
+        }
+        
+        function fetchDigit() {
+            let pixels = document.querySelectorAll('.pixel');
+            pixels.forEach(pixel=>{
+                let pixel_color = pixel.getAttribute("data-color")
+                if(pixel_color === "#FFFFFF") {
+                    mat[pixel.getAttribute("data-x")][pixel.getAttribute("data-y")] = 1 
+                } 
+            })
+            console.log(mat);
+        }
+    
+        return (<div className="button-group">
+                <button className="submit-button" type="submit" onClick={fetchDigit} >Detect</button> 
+                <button className="clear-button" onClick={clearBoard}>Clear</button>
+                </div>)
+    }
+    
     return (
-    <div>
+    <div className="container">
+    <div className="app">
         <Header />
         <div className="draw">
             {row}
         </div>
         <Buttons />
     </div>
+    </div>
     );
 }
 
-
-
-console.log(row);
 export default App;

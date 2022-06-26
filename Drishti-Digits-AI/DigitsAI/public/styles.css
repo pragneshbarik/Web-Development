@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=VT323&display=swap');
 
+
+
 * {
     text-align: center;
     background-color: whitesmoke;
 }
+
 
 .main-logo {
     font-family: "VT323";

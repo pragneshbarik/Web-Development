@@ -5,7 +5,8 @@ function Pixel(props) {
     function colorBlock(event) {
         setColor("#FFFFFF")
     }
-    return <div className="pixel" key={props.x + 28*props.y} data-id = {props.x + 28*props.y} data-x={props.x} data-y={props.y} onClick={colorBlock} style={{backgroundColor : color}}> </div>
+
+    return <div className="pixel" key={props.x + 28*props.y} data-id = {props.x + 28*props.y} data-x={props.x} data-y={props.y} onClick={colorBlock} style={{backgroundColor : color}} data-color={color}> </div>
 }
 
 export default Pixel;
