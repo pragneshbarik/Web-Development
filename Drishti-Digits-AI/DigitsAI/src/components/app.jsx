@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./header";
 import Pixel from "./pixel";
+import Axios  from "axios";
+import Footer from "./footer";
 
 function makeGrid(xlen, ylen) {
     let grid = []
@@ -44,7 +46,11 @@ function App() {
                     mat[pixel.getAttribute("data-x")][pixel.getAttribute("data-y")] = 1 
                 } 
             })
-            console.log(mat);
+            let vector = [].concat(...mat);
+            var param = {
+                data : JSON.stringify(vector)
+            }
+            Axios.post("http://127.0.0.1:5000", param).then(Response => console.log(Response))
         }
     
         return (<div className="button-group">
@@ -62,6 +68,7 @@ function App() {
         </div>
         <Buttons />
     </div>
+    <Footer />
     </div>
     );
 }

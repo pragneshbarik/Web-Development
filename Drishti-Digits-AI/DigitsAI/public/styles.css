@@ -4,13 +4,14 @@
 
 * {
     text-align: center;
-    background-color: whitesmoke;
 }
 
 
 .main-logo {
     font-family: "VT323";
     font-size: 5rem;
+
+    margin: 2rem;
 }
 .row {
     display: flex;
@@ -66,4 +67,15 @@
 .clear-button:hover {
     color: white;
     background-color: black;
+}
+
+footer {
+    margin: 5rem;
+    font-family: 'VT323';
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: .5rem;
 }
