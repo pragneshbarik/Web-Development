@@ -1,8 +1,8 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
    return(<header>
-        <p className="main-logo">Digits</p>
+        <p className="main-logo">{props.title}</p>
     </header>
    );
 }

@@ -4,14 +4,14 @@
 
 * {
     text-align: center;
-}
 
+    font-family: 'VT323';
+
+}
 
 .main-logo {
     font-family: "VT323";
     font-size: 5rem;
-
-    margin: 2rem;
 }
 .row {
     display: flex;

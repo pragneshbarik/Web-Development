@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./header";
 import Pixel from "./pixel";
 import Axios  from "axios";
@@ -29,6 +29,9 @@ function makeMatrix(xlen, ylen) {
 }
 
 function App() {
+
+    const [heading, setHeading] = useState("Digits")
+
     
     let row = makeGrid(14, 14)
     let mat = makeMatrix(14, 14)
@@ -50,7 +53,7 @@ function App() {
             var param = {
                 data : JSON.stringify(vector)
             }
-            Axios.post("http://127.0.0.1:5000", param).then(Response => console.log(Response))
+            Axios.post("http://127.0.0.1:5000", param).then(Response => setHeading(Response.data))
         }
     
         return (<div className="button-group">
@@ -62,7 +65,7 @@ function App() {
     return (
     <div className="container">
     <div className="app">
-        <Header />
+        <Header title={heading} />
         <div className="draw">
             {row}
         </div>
